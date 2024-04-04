@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="food.css">
+    <style>
+        div{
+            color:darkblue;
+            background-color: lightcyan;
+        }
+        label{
+            font-size: large;
+        }
+        
+        </style>
+    
+    </head>
+    <body class="register">    
+<form action="action_page.php " method="POST" autocomplete="on" style="border :5px solid green;">
+    <b><h1 style="text-align:center;color:blue;">registration form</h1></b>
+    <hr >
+    <div >
+    <label for="customer name">customer name  : </label>
+    <input type="text" id="customer name" name="customer name" placeholder="vidhi thakkar">
+</div>
+<br>
+<hr>
+<div >
+    <label for="mobile no">mobile   number  : </label>
+    <input type="number" id="mobile no" name="mobile no" placeholder="0123456789">
+    </div>
+    <br>
+    <hr>
+    <div>
+        <label for="birth date">  Birthday  date   : </label>
+        <input type="number" id="birth date" name="birth date" placeholder="09-12-2003">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="email-id">  email  id    : </label>
+            <input type="email" id="email id" name="birth date" placeholder="vidhithakkar@912gmail.com">
+            </div>
+            <br>
+            <hr>
+            <div>
+              <label for="food">select a menu:</label>  
+             <select id="food" name="food">       
+            <option value="veg">vegiterian</option>
+            <option value="nonveg">non vegiterian</option>
+            <option value="eggless">eggless</option>
+            </select>
+            </div>
+            <br>
+            <hr>
+               <div>
+                <label for="food">select dishes from your choice</label><br>
+                <input type="radio" id="punjabi food" name="select manu" placeholder="punjabi food">
+                <label for="punjabifood">punjabi food</label>
+                <br>
+                <input type="radio" id="chinese" name="select manu" placeholder="chinese">
+                <label for="chinese food">chinese food</label>
+                <br>
+                <input type="radio" id="gujarati food" name="select manu" placeholder="gujarati food">
+                <label for="gujarati food">gujarati food</label>
+                <br>
+                <input type="radio" id="street food" name="select manu" placeholder="street food">
+                <label for="street food">street food</label>
+                </div>
+                <br>
+                <hr>
+                <div>
+                    <label for="food">select item from punjabi</label><br>
+                    <input type="checkbox" id="kajukari" name="punjabi">
+                    <label for="kaju kari">kaju kari</label>
+                    <input type="checkbox" id="panir butter masala" name="punjabi">
+                    <label for="panir butter masala">panir butter masala</label>
+                    <input type="checkbox" id="fulka roti" name="punjabi">
+                    <label for="fulka roti">fulka roti</label>
+                    <input type="checkbox" id="nan" name="punjabi">
+                    <label for="nan">nan</label>
+                    <input type="checkbox" id="chapati roti" name="punjabi">
+                    <label for="chapati roti">chapati roti</label>
+                    <input type="checkbox" id="chana masala" name="punjabi">
+                    <label for="chana masala">chana masala</label>
+                    </div>
+                    <br>
+                <hr>
+                    <div>
+                        <label for="food">select item from chinese</label><br>
+                        <input type="checkbox" id="manchurian" name="chinese">
+                        <label for="manchurian">manchurian</label>
+                        <input type="checkbox" id="manchurian noodles" name="chinese">
+                        <label for="manchurian noodles">manchurian noodles</label>
+                        <input type="checkbox" id="chinese bhel" name="chinese bhel">
+                        <label for="chinese bhel">chinese bhel</label>
+                        <input type="checkbox" id="hqkka noodles" name="chinese">
+                        <label for="nan">hakka noodles</label>
+                        <input type="checkbox" id="panir chili" name="chinese">
+                        <label for="panir chili">panir chili</label>
+                        </div>
+                        <br>
+                    <hr>
+                        <div>
+                            <label for="food">select item from gujarati</label><br>
+                            <input type="checkbox" id="sev tameta" name="gujarati">
+                            <label for="sev tameta">sev tameta</label>
+                            <input type="checkbox" id="masala bhindi" name="gujarati">
+                            <label for="masala bhindi">masala bhindi</label>
+                            <input type="checkbox" id="bharela ringan" name="gujarati">
+                            <label for="bharela ringan">bharela ringan </label>
+                            <input type="checkbox" id="chapati" name="gujarati">
+                            <label for="chapati">chapati roti</label>
+                            <input type="checkbox" id="chhas" name="gujarati">
+                            <label for="chhas">chhas</label>
+                            <input type="checkbox" id="jira rice" name="gujarati">
+                            <label for="jira rice">jira rice</label>
+                            <input type="checkbox" id="dal fry" name="gujarati">
+                            <label for="dal fry">dal fry</label>
+                            </div>
+                            <br>
+                            <hr>
+                            <div>
+                                <label for="food">select item from street food</label><br>
+                                <input type="checkbox" id="burger" name="street food">
+                                <label for="burger">burger</label>
+                                <input type="checkbox" id="pizza" name="street food">
+                                <label for="pizza">pizza</label>
+                                <input type="checkbox" id="vada pav" name="street food">
+                                <label for="vada pav">vada pav </label>
+                                <input type="checkbox" id="garlic bread" name="street food">
+                                <label for="garlic bread">garlic bread</label>
+                                <input type="checkbox" id="frenchfries" name="street food">
+                                <label for="frenchfries">frenchfries</label>
+                                <input type="checkbox" id="cococola" name="street food">
+                                <label for="cococola">cococola</label>
+                                <input type="checkbox" id="cold coffee" name="street food">
+                                <label for="cold coffee">cold coffee</label>
+                                </div>
+                            <br>
+                            <hr>
+                            <div>
+                              <label for="address">select a address:</label>  
+                             <select id="add" name="add">       
+                            <option value="vidhyanagar"> vallabh vidhyanagar townhall</option>
+                            <option value="vidhyanagar"> vallabh vidhyanagar mota bajar</option>
+                            <option value="vidhyanagar"> vallabh vidhyanagar nanabajar</option>
+                            <option value="karamsad">karamsad</option>
+                            <option value="anand">anand</option>
+                            <option value="vidhyanagar"> anand super market</option>
+                            <option value="vidhyanagar"> janta chokdi vidhyanagar</option>
+                            </select>
+                            </div>
+                            <br>
+                            <hr>
+                            <div>
+                            <label for="search">search :</label>
+                             <input type="text" placeholder="search" name="search">
+                             </div>
+                            <br>
+                            <hr>
+                            <div>
+                                <label for="img">choose a file:</label>
+                                <input type="file" id="img" name="img" accept="image/*">
+                                </div>
+                                <br>
+                                <hr>
+     <div>
+        <button type="button" onclick="alert('your order is submitted')">submit</button><br>
+        <br>
+        <hr>
+        <input type="reset">
+          </div>
+        <br>
+        <hr>
+
+</form>
+</body>
+</html>

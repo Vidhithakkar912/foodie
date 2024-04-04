@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>menu</title>
+    <style>
+        table, th, td {
+          border:5px solid darkblue;
+          border-collapse:collapse;
+        }
+        td{
+            font-size: large;
+        }
+    </style>
+    <link rel="stylesheet" href="food.css">
+</head>
+<body class="menu">
+    <table style="width:100%;">
+        <tr >
+            <th>srno</th>
+            <th>items</th>
+            <th>food</th>
+            <th>price</th>
+           
+        </tr>
+        <tr >
+            <td style="color:darkred;">1</td>
+            <td style="color:darkred;"><ol><li> <input type="checkbox" class="checkbox">kaju kari</li>
+            <li><input type="checkbox" class="checkbox">panir butter masala</li>
+            <li><input type="checkbox" class="checkbox">nan roti</li>
+            <li><input type="checkbox" class="checkbox">fulka roti</li>
+            <li><input type="checkbox" class="checkbox">chapati roti</li>
+            <li><input type="checkbox" class="checkbox">chana masala</li>
+            </ol></td>
+            <td style="color:darkred;">punjabi food</td>
+            <td style="color:darkred;"><ol>
+                <li><input type="checkbox" class="checkbox">150</li>
+                <li><input type="checkbox" class="checkbox">180</li>
+                <li><input type="checkbox" class="checkbox">40</li>
+                <li><input type="checkbox"class="checkbox">30</li>
+                <li><input type="checkbox" class="checkbox">15</li>
+                <li><input type="checkbox" class="checkbox">120</li>
+            </ol></td>
+        </tr>
+        <tr >
+           
+            <td style="color:darkred;">2</td>
+            <td style="color:darkred;"><ol><li>manchurian</li>
+            <li><input type="checkbox" class="checkbox">manchurian noodles</li>
+            <li><input type="checkbox" class="checkbox">Schezwan noodles</li>
+            <li><input type="checkbox" class="checkbox">hakka noodles</li>
+            <li><input type="checkbox" class="checkbox">cococola</li>
+            <li><input type="checkbox" class="checkbox">fanta</li>
+            <li><input type="checkbox" class="checkbox">maza</li>
+            </ol></td>
+            <td style="color:darkred;">chinese food</td>
+            <td style="color:darkred;"><ol>
+                <li><input type="checkbox"class="checkbox">80</li>
+                <li><input type="checkbox" class="checkbox">120</li>
+                <li><input type="checkbox" class="checkbox">100</li>
+                <li><input type="checkbox"class="checkbox">100</li>
+                <li><input type="checkbox" class="checkbox">40</li>
+                <li><input type="checkbox"class="checkbox">40</li>
+                <li><input type="checkbox"class="checkbox">40</li>
+            </ol></td>
+        </tr>
+        <tr >
+           
+            <td style="color:darkred;">3</td>
+            <td style="color:darkred;"><ol><li><input type="checkbox" class="checkbox"> tameta</li>
+            <li><input type="checkbox" class="checkbox">masala bhindi</li>
+            <li><input type="checkbox" class="checkbox">bharela ringan</li>
+            <li><input type="checkbox" class="checkbox">chhas</li>
+            <li><input type="checkbox"class="checkbox">papad</li>
+            <li><input type="checkbox" class="checkbox">roti</li>
+            </ol></td>
+            <td style="color:darkred;">gujarati food</td>
+            <td style="color:darkred;">
+                <ol>
+                <li><input type="checkbox" class="checkbox">70</li>
+                <li><input type="checkbox" class="checkbox">75</li>
+                <li><input type="checkbox" class="checkbox">80</li>
+                <li><input type="checkbox" class="checkbox">20</li>
+                <li><input type="checkbox"class="checkbox">15</li>
+                <li><input type="checkbox"class="checkbox">20</li></ol></td>
+        </tr>
+        <tr >
+            
+            <td style="color:darkred;">4</td>
+            <td style="color:darkred;"><ol><li><input type="checkbox" class="checkbox"> burger</li>
+            <li><input type="checkbox"class="checkbox">Pizza Margherita</li>
+            <li><input type="checkbox" class="checkbox">italian pizza</li>
+            <li> <input type="checkbox" class="checkbox">vada pav</li>
+            <li><input type="checkbox"class="checkbox">frenki</li>
+            <li><input type="checkbox"class="checkbox">bum samosa</li>
+            <li><input type="checkbox"class="checkbox">mag pulav</li>
+            </ol></td>
+            <td style="color:darkred;">street food</td>
+            <td style="color:darkred;"><ol>
+                <li><input type="checkbox"class="checkbox">50</li>
+                <li><input type="checkbox"class="checkbox">120</li>
+                <li><input type="checkbox"class="checkbox">120</li>
+                <li><input type="checkbox"class="checkbox">30</li>
+                <li><input type="checkbox"class="checkbox">50</li>
+                <li><input type="checkbox"class="checkbox">30</li>
+                <li><input type="checkbox"class="checkbox">30</li>
+            </ol></td>
+        </tr>
+    </table>
+    
+        <button onclick="generateForm()">Generate Form</button>
+    
+        <script>
+            function generateForm() {
+                var checkboxes = document.querySelectorAll('.checkbox:checked');
+                var formContent = 'Selected Items:\n\n';
+                var totalPrice = 0;
+    
+                checkboxes.forEach(function(checkbox) {
+                    var price = parseInt(checkbox.value);
+                    var itemName = parseInt(checkbox.value);
+                    var itemName = checkbox.nextSibling.nodeValue.trim();
+                    formContent += ` ${itemName} \n`;
+                    for (totalPrice in itemName){
+                    totalPrice +=` ${itemName} \n` ;}
+                    
+                });
+    
+                formContent += `Total Price: ${totalPrice}`;
+    
+                // Create a textarea element to display the form content
+                var formTextarea = document.createElement('textarea');
+                formTextarea.textContent = formContent;
+    
+                // Append the textarea to the body
+                document.body.appendChild(formTextarea);
+            }
+        </script>
+    
+    
+    
+</body>
+</html>
+
+
